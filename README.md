@@ -104,6 +104,13 @@ is attached to each release.
 
 Bug reports, ideas and pull requests are welcome – see [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## How this was made
+
+This app was developed with the help of AI (Claude by Anthropic): code, image
+pipeline and documentation were written together with the AI, then built,
+tested on a real Pebble Time 2 and reviewed by me. Issues and pull requests
+are handled by a human – me.
+
 ## License
 
 [MIT](LICENSE) © 2026 Michael Runge. Third-party code: see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

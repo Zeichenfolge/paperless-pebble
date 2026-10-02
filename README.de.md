@@ -72,6 +72,13 @@ pebble install --cloudpebble        # Uhr (Dev Connect in der Pebble-App einscha
 
 Aufbau des Projekts und technische Details: siehe [README.md](README.md#how-it-works).
 
+## Wie die App entstanden ist
+
+Die App wurde mit Hilfe von KI (Claude von Anthropic) entwickelt: Code,
+Bildverarbeitung und Dokumentation sind gemeinsam mit der KI entstanden,
+wurden gebaut, auf einer echten Pebble Time 2 getestet und von mir geprüft.
+Issues und Pull Requests bearbeite ich selbst.
+
 ## Lizenz
 
 [MIT](LICENSE) © 2026 Michael Runge. Fremder Code: siehe [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

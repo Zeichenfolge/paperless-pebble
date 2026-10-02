@@ -41,3 +41,5 @@ pebble emu-app-config        # opens the settings page for the emulator
 - `pebble build` must pass without warnings (CI checks this)
 - Test on the emulator (`emery`, ideally also `basalt`) and describe what you tested
 - Screenshots for UI changes are great – please use fictional documents, not your own
+- AI-assisted contributions are welcome (this project was built that way too) –
+  please test them yourself and mention it in the pull request

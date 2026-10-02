@@ -3,8 +3,8 @@
 // erscheint sie beim nächsten Öffnen in der neuen Sprache).
 
 // Links im Bereich "Unterstützen". Leer lassen, um den jeweiligen Link auszublenden.
-var SUPPORT_URL = 'https://buymeacoffee.com/michaelrunge';               // TODO: eigenen Namen eintragen
-var PROJECT_URL = 'https://github.com/Zeichenfolge/paperless-pebble'; // TODO: eigenes Repository
+var SUPPORT_URL = 'https://buymeacoffee.com/michaelrunge';
+var PROJECT_URL = 'https://github.com/Zeichenfolge/paperless-pebble';
 
 var TEXT = {
   de: {
