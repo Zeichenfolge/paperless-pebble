@@ -13,6 +13,7 @@ var TEXT = {
     language: 'Sprache',
     server: 'Server',
     url: 'Server-URL',
+    urlHelp: 'Tipp: „demo“ eintragen, um die App ohne Server mit Beispieldaten auszuprobieren.',
     token: 'API-Token',
     tokenHelp: 'In Paperless: Profil (oben rechts) → „Mein Profil“ → API-Auth-Token erzeugen und hier einfügen.',
     tokenPlaceholder: 'Token einfügen',
@@ -44,6 +45,7 @@ var TEXT = {
     language: 'Language',
     server: 'Server',
     url: 'Server URL',
+    urlHelp: 'Tip: enter "demo" to try the app with sample data, no server needed.',
     token: 'API token',
     tokenHelp: 'In Paperless: profile (top right) → "My Profile" → generate an API auth token and paste it here.',
     tokenPlaceholder: 'Paste token',
@@ -119,10 +121,11 @@ module.exports = function (lang) {
           type: 'input',
           messageKey: 'CfgUrl',
           label: t.url,
+          description: t.urlHelp,
           defaultValue: '',
           attributes: {
             placeholder: 'https://paperless.example.com',
-            type: 'url',
+            type: 'text',
             autocapitalize: 'off',
             autocorrect: 'off'
           }

@@ -6,6 +6,7 @@ var Clay = require('pebble-clay');
 var clayConfig = require('./config');
 var webp = require('./webp');
 var imaging = require('./image');
+var demo = require('./demo');
 var clay = null;  // wird beim Öffnen der Einstellungen in der aktuellen Sprache erzeugt
 
 var SETTINGS_KEY = 'paperless-settings';
@@ -24,7 +25,7 @@ var FLAG = { SELECTED: 1, SUGGESTED: 2 };
 // Texte, die das Handy an die Uhr schickt
 var TEXT = {
   de: {
-    setup: 'Bitte in der Pebble-App unter Einstellungen URL und API-Token eintragen.',
+    setup: 'Bitte in der Pebble-App unter Einstellungen URL und API-Token eintragen – oder „demo“ zum Ausprobieren.',
     invalidResponse: 'Ungültige Antwort vom Server',
     tokenInvalid: 'Token ungültig oder keine Rechte (%s)',
     notFound: 'Nicht gefunden (404) – URL prüfen',
@@ -43,7 +44,7 @@ var TEXT = {
     document: 'Dokument %s'
   },
   en: {
-    setup: 'Please enter the URL and API token in the Pebble app settings.',
+    setup: 'Please enter the URL and API token in the Pebble app settings – or "demo" to try it out.',
     invalidResponse: 'Invalid response from server',
     tokenInvalid: 'Invalid token or no permission (%s)',
     notFound: 'Not found (404) – check URL',
@@ -205,6 +206,10 @@ function sendImageStatus(seq, text, isError) {
 
 function request(method, path, body, binary, onSuccess, onError) {
   var cfg = loadSettings();
+  if (demo.isDemo(cfg.url)) {
+    demo.request(method, path, body, binary, cfg.lang, onSuccess, onError);
+    return;
+  }
   var xhr = new XMLHttpRequest();
   xhr.open(method, cfg.url + path, true);
   xhr.setRequestHeader('Authorization', 'Token ' + cfg.token);
@@ -385,7 +390,7 @@ function getDoc(docId, cb, onError) {
 
 function fetchInbox() {
   var cfg = loadSettings();
-  if (!cfg.url || !cfg.token) {
+  if (!cfg.url || (!cfg.token && !demo.isDemo(cfg.url))) {
     sendError(T('setup'));
     return;
   }

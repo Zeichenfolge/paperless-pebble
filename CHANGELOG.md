@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.4.0 – 2026-10-02
+- Demo mode: enter `demo` as server URL to try the app with fictional sample data
+- App icon in the watch's app menu
+- Appstore assets: icons, screenshots and description in `store/`
+
 ## 1.3.0 – 2026-10-02
 - Open source release (MIT)
 - Settings: support section with "Buy me a coffee" and GitHub link

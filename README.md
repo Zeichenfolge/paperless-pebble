@@ -40,6 +40,9 @@ it's free and open source either way.
    - an API token (Paperless: profile, top right → *My Profile* → API auth token)
    - optionally the name of your inbox tag (empty = the tags marked as inbox tag in Paperless)
 
+**Just want to try it?** Enter `demo` as server URL – the app then shows fictional sample
+documents, no server or token needed.
+
 ## Using it
 
 | Where | Button | Action |
@@ -99,6 +102,8 @@ is attached to each release.
 | `src/pkjs/image.js` | phone | scaling, splitting, dithering, 2-bit packing |
 | `src/pkjs/webp.js` | phone | pure-JS WebP decoder (generated, see `tools/webp`) |
 | `src/pkjs/config.js` | phone | settings page (Clay) |
+| `src/pkjs/demo.js` | phone | demo mode with fictional sample data |
+| `store/` | – | Appstore texts, icons and screenshots |
 
 ## Contributing
 

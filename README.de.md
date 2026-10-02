@@ -39,6 +39,9 @@ kostenlos und Open Source bleibt sie so oder so.
    - API-Token (Paperless: Profil oben rechts → *Mein Profil* → API-Auth-Token)
    - optional den Namen deines Inbox-Tags (leer = die in Paperless als Posteingangs-Tag markierten Tags)
 
+**Nur mal ausprobieren?** Als Server-URL `demo` eintragen – dann zeigt die App erfundene
+Beispieldokumente, ganz ohne Server und Token.
+
 ## Bedienung
 
 | Wo | Taste | Aktion |
