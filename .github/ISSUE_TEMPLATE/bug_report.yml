@@ -1,0 +1,55 @@
+name: Bug report / Fehler melden
+description: Something doesn't work as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! German or English is fine.
+        **Please do not post your API token or server URL.**
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened? / Was ist passiert?
+      description: What did you do, what did you expect, what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / Schritte
+      placeholder: |
+        1. Open a document
+        2. Actions → View image
+        3. ...
+  - type: dropdown
+    id: watch
+    attributes:
+      label: Watch / Uhr
+      options: [Pebble Time 2, Pebble Round 2, Pebble 2 Duo, Pebble Time / Time Steel, Pebble 2, Other]
+    validations:
+      required: true
+  - type: dropdown
+    id: phone
+    attributes:
+      label: Phone / Handy
+      options: [iPhone, Android]
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions / Versionen
+      description: App version (settings page or release), Paperless-ngx version, Pebble app version
+      placeholder: "App 1.3.0, Paperless-ngx 2.x, Pebble app x.y"
+  - type: dropdown
+    id: split
+    attributes:
+      label: Image split setting (if image related)
+      options: [Not image related, Vertical, Horizontal, Don't split]
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs (optional)
+      description: "`pebble logs --cloudpebble` output while the problem happens"
+      render: text

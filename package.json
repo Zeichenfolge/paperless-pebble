@@ -1,0 +1,70 @@
+{
+  "name": "paperless-pebble",
+  "author": "Michael Runge",
+  "version": "1.3.0",
+  "keywords": [
+    "pebble-app"
+  ],
+  "private": true,
+  "dependencies": {
+    "pebble-clay": "^1.0.4"
+  },
+  "pebble": {
+    "displayName": "Paperless",
+    "uuid": "5dc5ecb6-8d6a-44e7-a4f8-30345ddb54fa",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "basalt",
+      "diorite",
+      "emery"
+    ],
+    "watchapp": {
+      "watchface": false
+    },
+    "capabilities": [
+      "configurable"
+    ],
+    "messageKeys": [
+      "Type",
+      "Total",
+      "Num",
+      "Index",
+      "DocId",
+      "Title",
+      "Subtitle",
+      "Date",
+      "Correspondent",
+      "DocType",
+      "Tags",
+      "Text",
+      "Command",
+      "ImgMode",
+      "ImgCol",
+      "Seq",
+      "Width",
+      "Height",
+      "SrcW",
+      "Step",
+      "Offset",
+      "Data",
+      "Field",
+      "OptId",
+      "Flags",
+      "CfgUrl",
+      "CfgToken",
+      "CfgMax",
+      "CfgInboxTag",
+      "Split",
+      "SrcH",
+      "MaxBytes",
+      "Lang",
+      "CfgLang",
+      "CfgSplit"
+    ],
+    "resources": {
+      "media": []
+    }
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,20 @@
+name: Idea / Verbesserungsvorschlag
+description: Suggest a new feature or an improvement
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would you like to do? / Was möchtest du tun?
+      description: Describe the situation or problem, not only the solution.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea / Deine Idee
+      description: How could it work on the watch? Which buttons, which screen?
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives (optional)

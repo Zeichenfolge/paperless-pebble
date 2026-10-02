@@ -1,0 +1,57 @@
+/*
+ * Paperless für Pebble – Texte in Deutsch und Englisch
+ */
+#pragma once
+#include <pebble.h>
+
+typedef enum {
+  LANG_DE = 0,
+  LANG_EN = 1,
+} Language;
+
+typedef enum {
+  STR_CONNECTING,
+  STR_PHONE_UNREACHABLE,
+  STR_LOADING_INBOX,
+  STR_LOADING_DOCS,
+  STR_INBOX_EMPTY,
+  STR_LOADING_MORE,
+  STR_HDR_ERROR,
+  STR_HDR_INBOX,
+  STR_HDR_COUNT_ONE,
+  STR_HDR_COUNT_N,      // enthält %d
+  STR_NO_CORRESPONDENT,
+  STR_NO_DOC_TYPE,
+  STR_DATE_PREFIX,
+  STR_TAGS_PREFIX,
+  STR_FOOTER_ACTIONS,
+  STR_MARKING_DONE,
+  STR_ERROR_RETRY,
+  STR_SEND_FAILED,
+  STR_HDR_ACTIONS,
+  STR_ACT_IMAGE,
+  STR_ACT_CORRESPONDENT,
+  STR_ACT_DOC_TYPE,
+  STR_ACT_TAGS,
+  STR_ACT_DATE,
+  STR_ACT_DONE,
+  STR_ACT_DONE_SUB,
+  STR_IMG_LOADING,
+  STR_IMG_LOADING_PART,
+  STR_IMG_INVALID,
+  STR_IMG_NO_MEMORY,
+  STR_LOADING,
+  STR_OPT_LOADING,
+  STR_OPT_CURRENT,
+  STR_OPT_SUGGESTED,
+  STR_OPT_CURRENT_SUGGESTED,
+  STR_SAVING,
+  STR_SAVED,
+  STR_NO_ENTRIES,
+  STR_COUNT
+} StrId;
+
+void i18n_init(void);
+void i18n_set_language(Language lang);
+Language i18n_language(void);
+const char *tr(StrId id);

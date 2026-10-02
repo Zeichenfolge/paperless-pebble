@@ -1,0 +1,3 @@
+{ "presets": [["@babel/preset-env", { "targets": "ie 11", "modules": false, "exclude": ["transform-typeof-symbol"] }]],
+  "assumptions": { "setPublicClassFields": true, "constantSuper": true, "noClassCalls": true, "iterableIsArray": false },
+  "compact": false, "comments": false }

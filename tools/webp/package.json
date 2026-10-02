@@ -1,0 +1,15 @@
+{
+  "name": "paperless-pebble-webp-build",
+  "private": true,
+  "description": "Builds src/pkjs/webp.js (pure-JS WebP decoder, ES5) from image-in-browser",
+  "scripts": {
+    "build": "sh build.sh"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.0",
+    "@babel/core": "^7.25.0",
+    "@babel/preset-env": "^7.25.0",
+    "esbuild": "^0.25.0",
+    "image-in-browser": "3.6.0"
+  }
+}
